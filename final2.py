@@ -41,7 +41,7 @@ def main():
     st.subheader("Detect your favorite dogs with ease")
 
     # Select and display an image
-    file_path = st.file_uploader("Select an image", type=["jpg", "jpeg", "png"])
+    file_path = st.file_uploader("Select an image", type=["jpg", "jpeg", "png", "jfif"])
     if file_path is not None:
         result = get_breed_status(file_path)
         st.text(result)
